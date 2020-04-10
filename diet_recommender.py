@@ -675,9 +675,8 @@ def Healthy():
     X_test2=X_test
     y_pred=clf.predict(X_test)
    
-    
-    
-    print ('SUGGESTED FOOD ITEMS ::')
+        
+    print ('SUGGESTED FOOD ITEMS ARE ::')
     for ii in range(len(y_pred)):
         if y_pred[ii]==2:
             print (Food_itemsdata[ii])
@@ -700,6 +699,7 @@ if __name__ == '__main__':
     e3 = Entry(main_win)
     e4 = Entry(main_win)
 
+    
     e1.grid(row=0, column=1)
     e2.grid(row=1, column=1)
     e3.grid(row=2, column=1)
